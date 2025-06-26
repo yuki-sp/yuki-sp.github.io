@@ -1,0 +1,53 @@
+<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+    </defs>
+    <g class="parallax">
+        <!-- 第一层波浪 -->
+        <use xlink:href="#gentle-wave" x="0" y="0" fill="rgba(255,255,255,0.7)">
+            <animateTransform
+                attributeName="transform"
+                type="translate"
+                values="-150 0; 150 0"
+                dur="7s"
+                repeatCount="indefinite"
+            />
+        </use>
+        
+        <!-- 第二层波浪 -->
+        <use xlink:href="#gentle-wave" x="0" y="3" fill="rgba(255,255,255,0.5)">
+            <animateTransform
+                attributeName="transform"
+                type="translate"
+                values="-150 0; 150 0"
+                dur="10s"
+                begin="2s"
+                repeatCount="indefinite"
+            />
+        </use>
+        
+        <!-- 第三层波浪 -->
+        <use xlink:href="#gentle-wave" x="0" y="5" fill="rgba(255,255,255,0.3)">
+            <animateTransform
+                attributeName="transform"
+                type="translate"
+                values="-150 0; 150 0"
+                dur="13s"
+                begin="4s"
+                repeatCount="indefinite"
+            />
+        </use>
+        
+        <!-- 第四层波浪 -->
+        <use xlink:href="#gentle-wave" x="0" y="7" fill="#fff">
+            <animateTransform
+                attributeName="transform"
+                type="translate"
+                values="-150 0; 150 0"
+                dur="20s"
+                begin="6s"
+                repeatCount="indefinite"
+            />
+        </use>
+    </g>
+</svg>
