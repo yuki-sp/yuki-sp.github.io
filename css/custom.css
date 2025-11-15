@@ -8,3 +8,12 @@
 #blog-info .nav-site-title .site-name{
   display: none;
 }
+@font-face {
+  font-family: 'LXGW WenKai Screen';
+  src: url('/fonts/LXGWWenKaiGBScreen.subset.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --global-font: 'LXGW WenKai Screen', sans-serif;
+}
